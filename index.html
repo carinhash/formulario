@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Formulário</h1>
+    </header>
+    <form action="#" method="post">
+        <!-- seção Nome -->
+        <label for="nome"> Nome: </label>
+        <input type="text" name="nome" id="nome" placeholder="Digite seu nome">
+        <br>
+        <!-- seção senha -->
+        <label for="senha">Senha:</label>
+        <input type="password" name="senha" id="senha" placeholder="Digite sua senha">
+        <br>
+        <!-- seção email -->
+        <label for="email">E-mail:</label>
+        <input type="email" name="email" id="email" placeholder="Digite seu e-mail">
+        <br>
+        <!-- seção idade -->
+        <label for="idade">Idade:</label>
+        <input type="number" name="idade" id="idade" placeholder="Digite sua idade" min="18" max="100"
+            class="small-input">
+        <br>
+        <!-- seção site -->
+        <label for="website"> Website: </label>
+        <input type="url" name="website" id="website" placeholder="https://">
+        <br>
+        <!-- seção telefone -->
+        <label for="telefone">Telefone</label>
+        <input type="tel" name="telefone" id="telefone" placeholder="(xx) xxxxx-xxxx">
+        <br>
+        <!-- seção termo -->
+        <label for="termos">Aceito os Termos:</label>
+        <input type="checkbox" name="termos" id="termos">
+        <br>
+        <!-- seção genero -->
+        <label for="genero">Gênero</label>
+
+        <input type="radio" name="genero" id="masculino" class="small-input" value="masculino">
+        <label for="masculino">Masculino</label>
+
+        <input type="radio" name="genero" id="feminino" class="small-input" value="feminino">
+        <label for="feminino">Feminino</label>
+
+        <input type="radio" name="genero" id="outro" class="small-input" value="outro">
+        <label for="outro">Outro</label>
+        <br>
+        <!-- seção data-nascimento -->
+        <label for="data-nascimento">Data de Nascimento:</label>
+        <input type="date" name="data-nascimento" id="data-nascimento">
+        <br>
+        <!-- seção cor favorita -->
+        <label for="cor-favorita">Cor Favorita:</label>
+        <input type="color" name="cor-favorita" id="cor-favorita">
+        <br>
+        <!-- seção de satistafação -->
+        <label for="satisfacao">Satisfação (0 a 10):</label>
+        <input type="range" name="satisfacao" id="satisfacao" min="0" max="10">
+        <br>
+        <!-- seção de comentarios -->
+        <label for="comentarios">Comentários:</label> <br>
+        <textarea name="comentarios" id="comentarios" rows="4" placeholder="Escreva Seu Comentário"></textarea>
+        <br>
+        <!-- seção de pais -->
+        <label for="pais">País:</label>
+        <select name="pais" id="pais">
+            <option value="brasil">Brasil</option>
+            <option value="eua">Estados Unidos</option>
+            <option value="canada">Canadá</option>
+            <option value="russia">Russia</option>
+            <option value="japão">Japão</option>
+            <option value="china">China</option>
+            <option value="correia">Correia do sul</option>
+        </select>
+        <br>
+        <!-- seção de arquivos -->
+        <label for="arquivo">Carregar Arquivo</label>
+        <input type="file" name="arquivo" id="arquivo">
+        <br><br>
+        <button type="submit">Enviar</button>
+
+
+
+
+    </form>
+</body>
+
+</html>
